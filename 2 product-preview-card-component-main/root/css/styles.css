@@ -1,0 +1,158 @@
+/* Clases Generales */
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Montserrat", "Times New Roman", Arial, sans-serif;
+  background-color: rgb(39, 39, 39);
+  flex-direction: column;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+}
+/* Clase para ver los bordes de cada caja despues hay que borrarla */
+.borde {
+  border: 2px #ff0000 solid;
+}
+/* Estilo del Main */
+main {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+  height: 80vh;
+}
+section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 90%;
+  height: 90%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+article {
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
+  margin: 0px 22px;
+}
+img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.desktop{
+    display: none;
+}
+h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: left;
+  letter-spacing: 5.5px;
+  color: hsl(228, 12%, 48%);
+}
+h2 {
+  font-family: Fraunces, Courier, monospace;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: left;
+  letter-spacing: 0.3px;
+  color: hsl(212, 21%, 14%);
+}
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  text-align: left;
+  color: #646d7e;
+}
+h3 {
+  font-family: Fraunces, Courier, monospace;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: left;
+  letter-spacing: 0.3px;
+  color: hsl(158, 36%, 37%);
+}
+
+h4 {
+  text-decoration: line-through;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  text-align: left;
+  color: #646d7e;
+  margin-left: 20px;
+}
+button {
+  font-family: Montserrat, Courier, monospace;
+  background-color: hsl(158, 36%, 37%);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 27px;
+  color: #ffffff;
+  justify-content: center;
+  border-radius: 10px;
+  border: 0px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.material-symbols-outlined {
+  font-size: 16px;
+  align-self: center;
+  padding: 0px 10px;
+}
+
+/* Estilo del footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Adecuacion Responsive a tamaño 1440 */
+/* Si bien el corte esta establecido para 375 y 
+1440 voy a hacer el carte en 580 que hasta donde 
+no se rompre el sitio */
+
+@media (min-width: 580px) {
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: flex;
+    }
+    main{
+        height: 100vh;
+    }
+    section{
+        flex-direction: row;
+        width: 600px;
+        height: 500px;
+
+    }
+    img{
+        width: 50%;
+        border-radius: 10px 0px 0px 10px;
+    }
+    article{
+        height: 100%;
+        margin: 0px 28px;
+    }
+}
